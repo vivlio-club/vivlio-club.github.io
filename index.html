@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style type="test/css">@import url("style.css");</style>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="doing.js"></script>
+  </head>
+  <body>
+    <div class="profile">
+      <div class="stats"></div>
+      <div class="profile_counter">
+        <div class="profile_pic">
+          <img src="vivlio logo.png">
+        </div>
+        <div class="profile_text"></div>
+      </div>
+    </div>
+    <div class="context">
+      <div class="blog_title"></div>
+      <div class="context_counter">
+        <div class="context_main">
+          <div class="context_title">title</div>
+          <div class="context_position">position</div>
+        </div>
+        <div class="context_text" include-html="context.html">why not</div>
+      </div>
+    </div>
+    <div class="sidebar">
+      hi hello
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+         $(".context_text").load("context.html")
+        /* id 지정을 통해서도 가능합니다.
+         $("#header").load("header.html #navbar")
+         */
+      });
+    </script>
+</html>

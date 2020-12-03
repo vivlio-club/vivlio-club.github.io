@@ -1,0 +1,114 @@
+html{height:100%;}
+body{
+  padding: 0; margin: 0;
+  position: relative; height: 100%; width:100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  background: #333;
+  background-image: linear-gradient(#777777 .1em, transparent .1em), linear-gradient(90deg, #777777 .1em, transparent .1em);
+  background-size: 1.5em 1.5em;
+}
+pattern {
+  background: repeating-linear-gradient(#444, #444 10px, #888 0, #888 20px);
+}
+:root{
+  --windowWidth:
+}
+
+.profile{
+  margin-left: 7.4vw;
+  width:300px; height: 80vh; float: left;
+  background-color: white;
+  border-top: 5px solid black; border-bottom: 5px solid black; border-left: 5px solid black;
+  border-radius: 15px;
+  box-shadow:
+  0 0 0 20px #56B3D5,
+  0 0 0 25px black;
+  z-index: 2;
+}
+.context{
+  width: calc(100% - (2*7.4vw+300px+100px)); height: 80vh; float: left;
+  background-color: #EEEEEE;
+  border-top: 5px solid black; border-bottom: 5px solid black;
+  border-top-left-radius: 15px; border-bottom-left-radius: 15px;
+  box-shadow:
+  0 20px 0 0px #56B3D5,
+  0 25px 0 0px black,
+  0 -20px 0 0px #56B3D5,
+  0 -25px 0 0px black;
+  z-index: 3;
+}
+.sidebar{
+  margin-right: 7.4vw;
+  width: 100px; height: 80vh;
+  background-color: #EEEEEE;
+  float: left;
+  border-top: 5px solid black; border-bottom: 5px solid black; border-right: 5px solid black;
+  border-top-right-radius: 15px; border-bottom-right-radius: 15px;
+  box-shadow:
+  0 0 0 20px #56B3D5,
+  0 0 0 25px black;
+  z-index: 1;
+}
+
+.stats{
+  height: 5vh;
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  margin-top: 2.5vh;
+}
+.profile_counter{
+  height: 71.2vh;
+  border: 2px solid grey; border-radius: 15px;
+  margin-left: 10px; margin-right: 5px; margin-bottom: 5px;
+}
+.profile_pic{
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  margin-top: 2.5vh;
+}
+
+.blog_title{
+  height: 5vh;
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  margin-top: 2.5vh;
+}
+.context_counter{
+  background-color: white;
+  height: 71.2vh;
+  border: 2px solid grey; border-radius: 15px;
+  margin-left: 10px; margin-right: 5px; margin-bottom: 5px;
+}
+.context_main{
+  height: 50px; weight: 100%;
+  background-color: yellow;
+  overflow: hidden;
+  margin-top: .5vh;
+}
+.context_title{
+  height: 45px;
+  background-color: orange;
+  overflow: hidden;
+  float: left;
+  margin-left: 15px; margin-top: 2.5px;
+}
+.context_position{
+  height: 45px;
+  background-color: purple;
+  overflow: hidden;
+  float: right;
+  margin-right: 15px; margin-top: 2.5px;
+}
+.context_text{
+  height: calc(71vh - 60px); overflow-x: hidden;
+  background-color: purple;
+  margin-bottom: 5px; margin-left: 5px; margin-right: 5px;
+}
+
+.test_div{
+  background-color: blue;
+  position: static; width: 25px; height: 25px;
+}
